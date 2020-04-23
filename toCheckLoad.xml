@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<footballers>
+	<footballer name="Leo Messi" date="24/06/1987" club="Barcelona" hometown="Rosario" category="main" position="forward" />
+        <footballer name="Kylian Mbappe" date="20/12/1998" club="Paris SG" hometown="Paris" category="main" position="striker" />
+        <footballer name="Ivan Victorovich Vasilenok" date="17/05/1989" club="Baranovichi" hometown="Smolevichi" category="reserve" position="defender" />
+        <footballer name="Cristiano Ronaldo" date="5/02/1985" club="Juventus" hometown="Hunchal" category="main" position="forward" />
+        <footballer name="Luis Suarez" date="24/01/1987" club="Barcelona" hometown="Salto" category="main" position="striker" />
+        <footballer name="Antoine Griezmann" date="21/03/1991" club="Barcelona" hometown="Macon" category="main" position="forward" />
+        <footballer name="Gareth Frank Bale" date="16/07/1989" club="Real Madrid" hometown="Cardiff" category="main" position="winger" />
+        <footballer name="Robert Lewandowski" date="21/08/1988" club="Bayern Munich" hometown="Warsaw" category="main" position="striker" />
+        <footballer name="Thomas Muller" date="13/09/1989" club="Bayern Munich" hometown="Weilheim in Oberbayern" category="main" position="forward" />
+        <footballer name="Luka Modric" date="9/09/1985" club="Real Madrid" hometown="Zadar" category="main" position="midfielder" />
+        <footballer name="Paul Labile Pogba" date="15/03/1993" club="Manchester United" hometown="Lagny-sur-Marne" category="main" position="midfielder" />
+        <footballer name="Lev Ivanovich Yashin" date="22/09/1929" club="n/a" hometown="Moscow" category="n/a" position="goalkeeper" />
+        <footballer name="Samuel Yves Um Titi" date="14/11/1993" club="Barcelona" hometown="Yaounde" category="reserve" position="centre-back" />
+        <footballer name="Edson Arantes do Nascimento" date="23/10/1940" club="n/a" hometown="Tres Coracoes" category="n/a" position="attacking midfielder" />
+       <footballer name="Diego Armando Maradona" date="30/10/1960" club="n/a" hometown="Buenos Aires" category="n/a" position="second striker" />
+       <footballer name="Toni Kroos" date="4/01/1990" club="Real Madrid" hometown="Greifswald" category="main" position="midfielder" />
+       <footballer name="Manuel Peter Neuer" date="27/03/1986" club="Bayern Munich" hometown="Gelsenkirchen" category="main" position="goalkeeper" />
+       <footballer name="Igor Vladimirovich Akinfeev" date="8/04/1986" club="CSKA" hometown="Vidnoye" category="main" position="goalkeeper" />
+      <footballer name="Gianluigi Buffon" date="28/01/1978" club="Juventus" hometown="Carrara" category="main" position="goalkeeper" />
+      <footballer name="Neymar da Silva Santos Junior" date="5/02/1992" club="Paris SG" hometown="Mogi das Cruzes" category="main" position="forward" />
+      <footballer name="Gonzalo Gerardo Higuain" date="10/12/1987" club="Juventus" hometown="Brest" category="main" position="striker" />
+      <footballer name="Francisco Roman Alarcon Suarez" date="21/04/1992" club="Real Madrid" hometown="Benalmadena" category="reserve" position="attacking midfielder" />
+      <footballer name="Naby Laye Keita" date="10/02/1995" club="Liverpool" hometown="Conakry" category="reserve" position="central midfielder" />
+      <footballer name="Jordan Brian Henderson" date="10/02/1995" club="Liverpool" hometown="Sunderland" category="main" position="midfielder" />
+      <footballer name="Artyom Sergeyevich Dzyuba" date="22/08/1988" club="Zenit" hometown="Moscow" category="main" position="striker" />
+      <footballer name="Angel Fabian Di Maria" date="14/02/1988" club="Paris SG" hometown="Rosario" category="main" position="attacking midfielder" />
+      <footballer name="Petr Cech" date="20/05/1982" club="n/a" hometown="Pizen" category="n/a" position="goalkeeper" />
+      <footballer name="Edinson Roberto Cavani Gomez" date="14/02/1987" club="Paris SG" hometown="Salto" category="main" position="striker" />
+      <footballer name="Ivan Rakitiс" date="10/05/1988" club="Barcelona" hometown="Rheinfelden" category="reserve" position="midfielder" />
+      <footballer name="Mesut Ozil" date="15/10/1988" club="Arsenal" hometown="Gelsenkirchen" category="reserve" position="attacking midfielder" />
+      <footballer name="David Olatukunbo Alaba" date="24/06/1992" club="Bayern Munich" hometown="Vienna" category="main" position="defender" />
+      <footballer name="Gnegneri Yaya Toure" date="13/05/1983" club="Manchester United" hometown="Bouake" category="main" position="midfielder" />
+      <footballer name="Gerard Pique Bernabeu" date="2/02/1987" club="Barcelona" hometown="Barcelona" category="main" position="centre-back" />
+      <footballer name="Mats Julian Hummels" date="16/12/1988" club="Borussia Dortmund" hometown="Bergisch Gladbach" category="main" position="centre-back" />
+      <footballer name="Bastian Schweinsteiger" date="1/08/1984" club="Manchester United" hometown="Kolbermoor" category="main" position="midfielder" />
+      <footballer name="Marco Reus" date="31/05/1989" club="Borussia Dortmund" hometown="Dortmund" category="main" position="attacking midfielder" />
+      <footballer name="Arturo Erasmo Vidal Pardo" date="22/05/1987" club="Barcelona" hometown="Santiago" category="main" position="midfielder" />
+      <footballer name="Karim Mostafa Benzema" date="19/12/1987" club="Real Madrid" hometown="Lyon" category="main" position="striker" />
+      <footballer name="Thibaut Nicolas Marc Courtois" date="11/05/1992" club="Real Madrid" hometown="Bree" category="main" position="goalkeeper" />
+      <footballer name="Hendrik Johannes Cruijff" date="25/04/1947" club="n/a" hometown="Amsterdam" category="n/a" position="forward" />
+      <footballer name="Franz Anton Beckenbauer" date="11/09/1945" club="n/a" hometown="Munich" category="n/a" position="defender" />
+      <footballer name="Marcel van Basten" date="31/10/1964" club="n/a" hometown="Utrecht" category="n/a" position="striker" />
+      <footballer name="Zinedine Yazid Zidane" date="23/06/1972" club="n/a" hometown="Marseille" category="n/a" position="attacking midfielder" />
+      <footballer name="Ronaldo Luis Nazario de Lima" date="18/09/1976" club="n/a" hometown="Rio de Janeiro" category="n/a" position="striker" />
+      <footballer name="Arjen Robben" date="23/01/1984" club="Bayern Munich" hometown="Bedum" category="main" position="winger" />
+      <footballer name="Andrey Sergeyevich Arshavin" date="29/05/1981" club="n/a" hometown="Saint Petersburg" category="n/a" position="winger" />
+      <footballer name="Aleksandr Anatolyevich Kerzhakov" date="27/11/1982" club="n/a" hometown="Kingisepp" category="n/a" position="striker" />
+      <footballer name="Sergei Nikolayevich Ignashevich" date="14/07/1979" club="n/a" hometown="Moscow" category="n/a" position="centre-back" />
+      <footballer name="Mohamed Salah" date="15/06/1992" club="Liverpool" hometown="Nagrig" category="main" position="forward" />
+      <footballer name="Gianluigi Donnarumma" date="25/02/1999" club="Milan" hometown="Castellammare di Stabia" category="main" position="goalkeeper" />
+</footballers>
+
