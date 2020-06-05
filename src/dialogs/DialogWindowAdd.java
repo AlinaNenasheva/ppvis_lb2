@@ -27,19 +27,19 @@ public class DialogWindowAdd extends Dialog {
 	private String input5;
 	private String input6;
 	private Footballer footballer;
-
-	public DialogWindowAdd(Shell parent) {
-		this(parent, SWT.DIALOG_TRIM | SWT.APPLICATION_MODAL);
-	}
-
+	
 	private DialogWindowAdd(Shell parent, int style) {
 		super(parent, style);
-		setText("Add new footballer");
+	//	setText("Add new footballer");
+	}
+
+	public DialogWindowAdd(Shell parent) {
+		this(parent, 0);
 	}
 
 	public Footballer open() {
-		Shell shell = new Shell(getParent(), getStyle());
-		shell.setText(getText());
+		Shell shell = new Shell(getParent());
+		shell.setText("Add new footballer");
 		createContents(shell);
 		shell.pack();
 		shell.open();

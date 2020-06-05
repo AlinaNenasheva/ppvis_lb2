@@ -115,6 +115,8 @@ public class View {
 		display.dispose();
 	}
 
+	
+	
 	public MenuItem getItem1() {
 		return item1;
 	}

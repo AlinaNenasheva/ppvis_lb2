@@ -1,6 +1,8 @@
 package controller;
 
 import java.io.IOException;
+import java.lang.reflect.InvocationTargetException;
+import java.sql.SQLException;
 
 import javax.xml.parsers.ParserConfigurationException;
 import javax.xml.stream.XMLStreamException;
@@ -17,6 +19,7 @@ import dialogs.DialogWindowAdd;
 import dialogs.DialogWindowLoad;
 import dialogs.DialogWindowSave;
 import dialogs.DialogWindowSearch;
+import model.DatabaseHandler;
 import model.Model;
 import parsers.DOMxml;
 import view.View;
@@ -56,16 +59,36 @@ public class Controller {
 			@Override
 			public void widgetSelected(SelectionEvent arg0) {
 				try {
-					DialogWindowLoad dialog = new DialogWindowLoad();
-					String path = "";
-					path = dialog.open(view.getShell());
-					if (path != null)
-						model.getInfo(path);
-				} catch (ParserConfigurationException | SAXException | IOException e) {
+//					DialogWindowLoad dialog = new DialogWindowLoad();
+//					String path = "";
+//					path = dialog.open(view.getShell());
+//					if (path != null)
+//						model.getInfo(path);
+					DatabaseHandler dataBaseHandler = new DatabaseHandler();
+					try {
+						dataBaseHandler.userForLoad(view, model);
+					} catch (ClassNotFoundException e) {
+						// TODO Auto-generated catch block
+						e.printStackTrace();
+					} catch (NoSuchMethodException e) {
+						// TODO Auto-generated catch block
+						e.printStackTrace();
+					} catch (IllegalAccessException e) {
+						// TODO Auto-generated catch block
+						e.printStackTrace();
+					} catch (InvocationTargetException e) {
+						// TODO Auto-generated catch block
+						e.printStackTrace();
+					} catch (InstantiationException e) {
+						// TODO Auto-generated catch block
+						e.printStackTrace();
+					} catch (SQLException e) {
+						// TODO Auto-generated catch block
+						e.printStackTrace();
+					}
+				} catch (IOException e) {
 					e.printStackTrace();
 				}
-				view.fillTheRows(
-						model.extractBlock(view.getPageLabel(), view.getCurElemsLabel(), view.getAllElemsLabel()));
 				disableButtons();
 			}
 
@@ -90,24 +113,34 @@ public class Controller {
 			@Override
 			public void widgetSelected(SelectionEvent arg0) {
 				try {
-					DialogWindowSave dialog = new DialogWindowSave();
-					String path = "";
-					path = dialog.open(view.getShell());
-					if (path != null) {
-						DOMxml domParser = new DOMxml();
-						domParser.downloadedData(model.getFootballers(), path);
-					}
-				} catch (ParserConfigurationException e) {
-					e.printStackTrace();
-				} catch (IOException e) {
-					e.printStackTrace();
-				} catch (SAXException e) {
-					e.printStackTrace();
-				} catch (XMLStreamException e) {
-					e.printStackTrace();
+//					DialogWindowSave dialog = new DialogWindowSave();
+//					String path = "";
+//					path = dialog.open(view.getShell());
+//					if (path != null) {
+//						DOMxml domParser = new DOMxml();
+//						domParser.downloadedData(model.getFootballers(), path);
+//					}
+					DatabaseHandler dataBaseHandler = new DatabaseHandler();
+					dataBaseHandler.saveInSQL(model.getFootballers());
 				} catch (TransformerFactoryConfigurationError e) {
 					e.printStackTrace();
-				} catch (TransformerException e) {
+				} catch (ClassNotFoundException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				} catch (NoSuchMethodException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				} catch (IllegalAccessException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				} catch (InvocationTargetException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				} catch (InstantiationException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				} catch (IOException e) {
+					// TODO Auto-generated catch block
 					e.printStackTrace();
 				}
 			}
@@ -145,6 +178,16 @@ public class Controller {
 				Footballer newFootballer = dialog.open();
 				if (newFootballer != null) {
 					model.addFootballer(newFootballer);
+					DatabaseHandler dataBaseHandler = new DatabaseHandler();
+					try {
+						dataBaseHandler.addFootballer(newFootballer);
+					} catch (InstantiationException | IllegalAccessException | IllegalArgumentException
+							| InvocationTargetException | NoSuchMethodException | SecurityException
+							| ClassNotFoundException e) {
+						// TODO Auto-generated catch block
+						e.printStackTrace();
+						System.out.print("asa");
+					}
 					view.fillTheRows(
 							model.extractBlock(view.getPageLabel(), view.getCurElemsLabel(), view.getAllElemsLabel()));
 					disableButtons();
@@ -181,7 +224,13 @@ public class Controller {
 		view.getDeleteButton().addSelectionListener(new SelectionAdapter() {
 			@Override
 			public void widgetSelected(SelectionEvent arg0) {
-				model.delete(view.getShell());
+				try {
+					model.delete(view.getShell());
+				} catch (ClassNotFoundException | NoSuchMethodException | IllegalAccessException
+						| InvocationTargetException | InstantiationException | IOException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
 				model.setCurrentPage(1);
 				view.fillTheRows(
 						model.extractBlock(view.getPageLabel(), view.getCurElemsLabel(), view.getAllElemsLabel()));
@@ -190,7 +239,13 @@ public class Controller {
 		});
 
 		view.getItem1().addListener(SWT.Selection, event -> {
-			model.delete(view.getShell());
+			try {
+				model.delete(view.getShell());
+			} catch (ClassNotFoundException | NoSuchMethodException | IllegalAccessException | InvocationTargetException
+					| InstantiationException | IOException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
 			model.setCurrentPage(1);
 			view.fillTheRows(model.extractBlock(view.getPageLabel(), view.getCurElemsLabel(), view.getAllElemsLabel()));
 			disableButtons();
