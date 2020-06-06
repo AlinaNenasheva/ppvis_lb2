@@ -16,8 +16,8 @@ import view.View;
 
 public class DatabaseHandler {
 	Connection dbConnection;
-	private String dbUser = "root";
-	private String dbPass = "LEO170701"; 
+	private String dbUser = "****";
+	private String dbPass = "*********"; 
 
 
 	public Connection getDbConnection()
