@@ -14,8 +14,11 @@ import java.util.List;
 import dataUnit.Footballer;
 import view.View;
 
-public class DatabaseHandler extends Config {
+public class DatabaseHandler {
 	Connection dbConnection;
+	private String dbUser = "root";
+	private String dbPass = "LEO170701"; 
+
 
 	public Connection getDbConnection()
 			throws ClassNotFoundException, SQLException, InstantiationException, IllegalAccessException,

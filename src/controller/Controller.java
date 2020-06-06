@@ -186,7 +186,6 @@ public class Controller {
 							| ClassNotFoundException e) {
 						// TODO Auto-generated catch block
 						e.printStackTrace();
-						System.out.print("asa");
 					}
 					view.fillTheRows(
 							model.extractBlock(view.getPageLabel(), view.getCurElemsLabel(), view.getAllElemsLabel()));
